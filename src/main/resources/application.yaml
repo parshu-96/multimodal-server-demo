@@ -1,3 +1,13 @@
 spring:
   application:
     name: MultiModalDemo
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: gpt-4o-mini
+        temperature: 0.4
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
